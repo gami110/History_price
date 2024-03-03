@@ -25,8 +25,16 @@ def create_product_table():
     cur.execute('''
         CREATE TABLE IF NOT EXISTS PRODUCT
         (ID INT PRIMARY KEY,
-        NAME           TEXT    NOT NULL,
-        BRAND          TEXT);
+        NAME TEXT NOT NULL,
+        BRAND TEXT,
+        SECTION TEXT,
+        MANUFACTURER TEXT,
+        MANUFACTURED TEXT,
+        RELEASE TEXT,
+        AGE TEXT, 
+        COUNT_IN_PACKAGE TEXT, 
+        ACTIVE_INGREDIENTS TEXT
+        );
     ''')
 
     conn.commit()
